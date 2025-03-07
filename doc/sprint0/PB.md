@@ -14,7 +14,6 @@
 
 7. *As a student planning for next semester, I want to see whether a course is offered in Fall, Winter, or Summer so that I can plan my course selection accordingly.*  
 
-## Course Prerequisites & Information
 8. *As a second-year student, I want to see a clear list of prerequisites for a course so that I know what courses I need to complete before enrolling.*  
 
 9. *As a first-year student, I want to see what courses require this course as a prerequisite so that I can plan my future course selections more effectively.*  
