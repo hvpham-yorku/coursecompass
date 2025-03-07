@@ -32,7 +32,7 @@
 
 16. *As a third-year student, I want to sort professors by their rating so that I can find highly-rated instructors for my courses.*  
 
-17. *As a TA, I want to search for professors by name so that I can quickly find their profiles and see what courses they teach.*  
+17. *As a TA, I want to search for professors by name so that I can quickly find what courses they teach.*  
 
 18. *As a student, I want to see a list of top-rated professors for my major so that I can choose courses taught by well-regarded instructors.*  
 
