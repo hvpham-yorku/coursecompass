@@ -1,8 +1,3 @@
-# CourseCompass  
-### EECS 3311 N W25 | Group 2
-
----
-
 ## Definition of Done  
 
 Our *Definition of Done* (DoD) outlines the criteria that each feature must satisfy to be deemed complete. These standards, established through team consensus, apply to all user stories within CourseCompass.
