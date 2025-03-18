@@ -1,0 +1,92 @@
+/* Page Layout */
+.course-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Left Panel: Search Bar */
+.search-container {
+  width: 400px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 2px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+/* Search Title */
+.search-container h1 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Search Input & Button */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.filter-item {
+  width: 100%;
+  max-width: 340px;
+}
+
+/* Input Field */
+input {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+
+/* Search Button */
+.search-button {
+  padding: 14px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Right Panel: Course Details */
+.course-details {
+  flex-grow: 1;
+  width: calc(100vw - 400px);
+  padding: 40px;
+  background-color: #ffffff;
+  color: black;
+  overflow-y: auto;
+}
+
+/* Course Details Text */
+.course-details h2 {
+  color: #222;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course-details p {
+  color: #444;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
