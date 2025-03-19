@@ -84,7 +84,6 @@ for rows in tables_rows[4:7]:#goes through each course in list according to spec
     Description = paragraphs[4]
     desc_str = str(Description.text)
     #print(Description.text)
-
     course = {}
     course['subject'] = title_str[3:7]
     print(course["subject"])
