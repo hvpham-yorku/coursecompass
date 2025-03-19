@@ -110,9 +110,4 @@ The **Sprint 1 tasks** have been divided among the team:
 ---
 
 ## **Next Steps**
-1. **Kickoff development** - Assign tasks and begin working on individual components.  
-2. **Team check-in on March 10** to assess progress.  
-3. **Prepare for Sprint Review on March 20** to demo features.  
-
----
-This document serves as a formal record of the **Sprint 1 Planning Meeting**, ensuring alignment on goals, capacity, and task allocation.
+1. **Start development** - Assign tasks and begin working on individual components.  
