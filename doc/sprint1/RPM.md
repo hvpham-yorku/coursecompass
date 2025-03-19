@@ -46,7 +46,7 @@ Each team member has been assigned specific responsibilities for Sprint 1:
 | Julia Da Silva   | Frontend Developer    | UI/UX design, implementing search and prerequisite/post-requisite links |
 | Gurjap Hajra     | Backend Developer     | API integration for course search, database setup |
 | Rizikeshan Asohan | Full Stack Developer | Connecting frontend and backend for search & prerequisite features |
-| Sam Antoun       | QA & Documentation    | Testing, writing documentation, reviewing pull requests |
+| Sam Antoun       | Documentation    | Testing, writing documentation, reviewing pull requests |
 
 ## **Expected Challenges & Risks**
 - **Handling large course datasets efficiently** to ensure fast search results.  
