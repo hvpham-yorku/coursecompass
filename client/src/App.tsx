@@ -1,4 +1,4 @@
-import CourseSearch from "./pages/CourseSearch"; // Adjust path if needed
+import CourseSearch from "./pages/CourseSearch"; 
 
 const App = () => {
   return <CourseSearch />;
