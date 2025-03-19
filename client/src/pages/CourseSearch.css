@@ -3,63 +3,59 @@
   display: flex;
   height: 100vh;
   width: 100vw;
+  background-color: white;
+  overflow: hidden;
 }
 
-/* Left Panel: Search Bar */
+/* Search Bar */
 .search-container {
-  width: 400px;
+  width: 40vw;
   height: 100vh;
-  background-color: #f8f9fa;
-  padding: 20px;
-  border-right: 2px solid #ddd;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 60px;
+  border-right: 2px solid #ddd;
+  background-color: #f8f9fa;
   color: black;
 }
 
 /* Search Title */
 .search-container h1 {
   color: #333;
-  font-size: 20px;
-  margin-bottom: 30px;
+  font-size: 40px;
+  margin-bottom: 70px;
 }
 
-/* Search Input & Button */
+/* Search Filters */
 .filters {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  text-align: center;
-}
-
-.filter-item {
-  width: 100%;
-  max-width: 340px;
+  gap: 25px;
 }
 
 /* Input Field */
 input {
-  padding: 14px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 18px;
+  text-align: left;
+  width: 94%;
+  padding: 14px;
   background-color: white;
   color: black;
-  width: 100%;
-  text-align: center;
+  font-size: 18px;
 }
 
 /* Search Button */
 .search-button {
   padding: 14px;
   font-size: 18px;
-  background-color: #007bff;
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  background-color: #00b3ff;
   transition: background 0.3s ease;
   width: 100%;
 }
@@ -68,25 +64,63 @@ input {
   background-color: #0056b3;
 }
 
-/* Right Panel: Course Details */
-.course-details {
-  flex-grow: 1;
-  width: calc(100vw - 400px);
-  padding: 40px;
-  background-color: #ffffff;
-  color: black;
-  overflow-y: auto;
-}
-
-/* Course Details Text */
-.course-details h2 {
-  color: #222;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.course-details p {
-  color: #444;
+/* Dropdown Menu */
+.dropdown {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  padding: 14px;
+  background-color: white;
+  color: #333;
   font-size: 18px;
-  margin-bottom: 8px;
+}
+
+/* Course Grid Layout */
+.course-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 700px;
+  overflow-y: auto;
+  padding: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Individual Course Card */
+.course-card {
+  background: #d3d3d3;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: fit-content;
+  font-size: 20px;
+}
+
+/* Course Header */
+.course-header {
+  font-weight: bold;
+}
+
+/* Course Title */
+.course-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Course Description */
+.course-description {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Hover effect for course cards */
+.course-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f1f1f1;
 }
