@@ -1,6 +1,14 @@
 from bs4 import BeautifulSoup
 import requests
 import random
+import time
+import json
+import re
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
+
+driver = webdriver.Firefox()
 
 # list of user agents
 userAgents = [
@@ -11,7 +19,6 @@ userAgents = [
     # "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.1553.1540 Safari/537.36",
     # "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.4613.1196 Safari/537.36",
 ]
-
 
 headers = {
   "Host": "w2prod.sis.yorku.ca",
@@ -34,47 +41,62 @@ headers = {
 base_url = "https://w2prod.sis.yorku.ca"
 
 ## Open the Home Page
-home_page = requests.get(
-    "https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm",
-    headers=headers,
-)
+driver.get("https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm")
+time.sleep(3)
+check_input = driver.find_element(By.LINK_TEXT, "Course Campus")
+check_input.click()
+time.sleep(2)
+campus_select = driver.find_element(By.NAME, "selectCampusBox")
+select = Select(campus_select)
+select.select_by_visible_text("Keele")
+select.deselect_by_visible_text("Catholic Education Centre")
+time.sleep(1)
+check_input = driver.find_element(By.NAME, "3.10.7.5")
+check_input.click()
+courselist_page = driver.page_source
 
-if home_page.status_code == 200:
-    print("Home Page Opened Successfully")
-else:
-    print(f"{home_page.status_code} Error Opening Home Page")
-    exit()
-
-HomePageSoup = BeautifulSoup(home_page.text, "lxml")
-
+#HomePageSoup = BeautifulSoup(home_page.text, "lxml")
+CourselistPageSoup = BeautifulSoup(courselist_page, "lxml")
 # get the link to the Course Campus Search
-courseCampusLink = HomePageSoup.find('a', string="Course Campus").get('href')
 
-wosid = courseCampusLink.split('/')[-2]
+#soup = BeautifulSoup(all_course_page.text,"lxml")
 
-# get the link to search courses
-course_search_page = requests.get(
-    base_url+courseCampusLink,
-    headers=headers)
-soup = BeautifulSoup(course_search_page.text, "lxml")
+tables_tags = CourselistPageSoup.find_all("table")
+print(len(tables_tags[4].find_all('tr')))
+tables_rows = tables_tags[4].find_all('tr')
 
-search_link = soup.find("form", {"name":"courseCampusForm"}).get('action')
+list_of_courses = []
 
-# send the request to get all the courses in keele
-courseSearch_form_data = {
-    "sessionPopUp":0,
-    "selectCampusBox":3,
-    "3.10.7.5":"Search Courses",
-    "wosid":wosid
-}
-all_course_page = requests.post(
-    search_link,
-    headers=headers,
-    data=courseSearch_form_data
-)
+for rows in tables_rows[4:7]:#goes through each course in list according to specifies range.
+    time.sleep(2)
+    columns = rows.find('a')
+    print(columns['href'])
+    driver.get("https://w2prod.sis.yorku.ca" + columns['href'])
+    courseInfo_page = driver.page_source
+    courseInfoSoup = BeautifulSoup(courseInfo_page, "lxml")
 
-soup = BeautifulSoup(all_course_page.text,"lxml")
+    tables = courseInfoSoup.find_all('table')
+    
+    Title = tables[4].find('h1')
+    title_str = str(Title.text)
+    #print(Title.text)
+    paragraphs = tables[4].find_all('p')
+    Description = paragraphs[4]
+    desc_str = str(Description.text)
+    #print(Description.text)
 
-tables_tags = soup.find_all("table")
-
-print(len(tables_tags[0].find_all('tr')))
+    course = {}
+    course['subject'] = title_str[3:7]
+    print(course["subject"])
+    course['code'] = title_str[3:12]
+    print(course['code'])
+    course['number'] = title_str[8:12]
+    print(course["number"])
+    course['credits'] = title_str[15:19]
+    print(course['credits'])
+    course['name'] = title_str[22:]
+    print(course['name'])
+    course['description'] = desc_str
+    print(course['description'])
+    time.sleep(5)
+    driver.back()
