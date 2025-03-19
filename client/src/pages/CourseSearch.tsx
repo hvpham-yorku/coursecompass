@@ -61,13 +61,13 @@ const CourseSearch: React.FC = () => {
   }, []);
 
   /* Extracts department from course name (first word) */
-  const getDepartment = (courseName: string): string => {
-    return courseName.split(" ")[0];
+  const getDepartment = (courseCode: string): string => {
+    return courseCode.split(" ")[0];
   };
 
   /* Extracts level from course name (e.g., EECS 3311 -> 3000) */
-  const getLevel = (courseName: string): string => {
-    const match = courseName.match(/\d{4}/);
+  const getLevel = (courseCode: string): string => {
+    const match = courseCode.match(/\d{4}/);
     return match ? match[0][0] + "000" : "";
   };
 
@@ -78,16 +78,17 @@ const CourseSearch: React.FC = () => {
     if (searchTerm.trim()) {
       const searchNormalized = searchTerm.toLowerCase().trim();
       results = results.filter(course =>
-        course.course_Name.toLowerCase().includes(searchNormalized)
+        course.course_Code.toLowerCase().includes(searchNormalized) ||
+        (course.course_Name && course.course_Name.toLowerCase().includes(searchNormalized)) 
       );
     }
-
+    
     if (department) {
-      results = results.filter(course => getDepartment(course.course_Name) === department);
+      results = results.filter(course => getDepartment(course.course_Code) === department);
     }
 
     if (level) {
-      results = results.filter(course => getLevel(course.course_Name) === level);
+      results = results.filter(course => getLevel(course.course_Code) === level);
     }
 
     setFilteredCourses(results);
@@ -100,8 +101,8 @@ const CourseSearch: React.FC = () => {
   };
 
   /* Extracts unique departments and levels from available courses */
-  const uniqueDepartments = Array.from(new Set(courses.map(course => getDepartment(course.course_Name))));
-  const uniqueLevels = Array.from(new Set(courses.map(course => getLevel(course.course_Name))));
+  const uniqueDepartments = Array.from(new Set(courses.map(course => getDepartment(course.course_Code))));
+  const uniqueLevels = Array.from(new Set(courses.map(course => getLevel(course.course_Code))));
 
   return (
     <div className="course-container">
@@ -128,6 +129,19 @@ const CourseSearch: React.FC = () => {
               <option key={dept} value={dept}>{dept}</option>
             ))}
           </select>
+
+          {/* Level Dropdown */}
+          <select
+            className="dropdown"
+            value={level}
+            onChange={(e) => setLevel(e.target.value)}
+          >
+            <option value="">All Levels</option>
+            {uniqueLevels.map(level => level && (
+              <option key={level} value={level}>{level}</option>
+            ))}
+          </select>
+
 
           {/* Search Button */}
           <button onClick={handleSearchClick} className="search-button">
@@ -168,7 +182,7 @@ const CourseSearch: React.FC = () => {
             <h2>{selectedCourse.course_Code}: {selectedCourse.course_Name} ({selectedCourse.credits}) </h2>
             <p>{selectedCourse.description || "No description available."}</p>
             <p><hr /></p>
-            
+
             {/* Prerequisites & Post-requisites */}
             <div className="requisites-container">
               <div className="requisite">
