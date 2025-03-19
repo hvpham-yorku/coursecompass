@@ -79,10 +79,10 @@ const CourseSearch: React.FC = () => {
       const searchNormalized = searchTerm.toLowerCase().trim();
       results = results.filter(course =>
         course.course_Code.toLowerCase().includes(searchNormalized) ||
-        (course.course_Name && course.course_Name.toLowerCase().includes(searchNormalized)) 
+        (course.course_Name && course.course_Name.toLowerCase().includes(searchNormalized))
       );
     }
-    
+
     if (department) {
       results = results.filter(course => getDepartment(course.course_Code) === department);
     }
@@ -163,10 +163,13 @@ const CourseSearch: React.FC = () => {
               <div key={course._id} className="course-card" onClick={() => handleCourseClick(course)}>
                 <div className="course-header">
                   <span className="course-title">
-                    {course.course_Code}: {course.course_Name} ({course.credits})
+                    {course.course_Code}: {course.course_Name} ({course.credits}.0)
                   </span>
                 </div>
-                <p className="course-description">Course Description goes here</p>
+                <p className="course-description">
+                  {course.description ? `${course.description.substring(0, 80)}...` : "No description available."}
+                </p>
+
               </div>
             ))}
           </div>
@@ -179,7 +182,7 @@ const CourseSearch: React.FC = () => {
         {/* Display selected course details */}
         {selectedCourse && (
           <div className="selected-course">
-            <h2>{selectedCourse.course_Code}: {selectedCourse.course_Name} ({selectedCourse.credits}) </h2>
+            <h2>{selectedCourse.course_Code}: {selectedCourse.course_Name} ({selectedCourse.credits}.0) </h2>
             <p>{selectedCourse.description || "No description available."}</p>
             <p><hr /></p>
 
