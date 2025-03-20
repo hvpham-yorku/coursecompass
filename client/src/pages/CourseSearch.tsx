@@ -2,40 +2,42 @@ import { useEffect, useState } from "react";
 import "./CourseSearch.css";
 import "./CoursePage.css";
 
-/* 
-  Defines the structure for a professor object, 
-  where each key represents a professor's name with a string value.
-*/
+/* Defines the structure for a professor object */
 interface Professor {
-  [key: string]: string;
+  [key: string]: string; 
 }
 
-/* 
-  Defines the structure for a Course object, ensuring type safety.
-*/
+/* Defines the structure for a Course object */
 interface Course {
-  _id: string;
-  course_Code: string;
-  course_Name: string;
-  description?: string;
-  credits?: string;
-  preRequisite?: string[];
-  postRequisite?: string[];
-  professors?: Professor;
+  _id: string; 
+  course_Code: string; 
+  course_Name: string; 
+  description?: string; 
+  credits?: string; 
+  preRequisite?: string[]; 
+  postRequisite?: string[]; 
+  professors?: Professor; 
 }
 
 const CourseSearch: React.FC = () => {
-  /* State variables for course data and search functionality */
+  // State for storing fetched courses
   const [courses, setCourses] = useState<Course[]>([]);
+  // State for storing the user's search input
   const [searchTerm, setSearchTerm] = useState<string>("");
+  // State for storing the selected course details
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
+  // State for tracking the loading state
   const [loading, setLoading] = useState<boolean>(true);
+  // State for storing error messages
   const [error, setError] = useState<string>("");
+  // State for storing the selected department filter
   const [department, setDepartment] = useState<string>("");
+  // State for storing the selected course level filter
   const [level, setLevel] = useState<string>("");
+  // State for storing the filtered course list
   const [filteredCourses, setFilteredCourses] = useState<Course[]>([]);
 
-  /* Fetches courses from the backend on component mount */
+  // Fetches courses from the backend when the component mounts
   useEffect(() => {
     const fetchCourses = async () => {
       try {
@@ -43,15 +45,16 @@ const CourseSearch: React.FC = () => {
         if (!response.ok) throw new Error("Failed to fetch courses");
         const data: Course[] = await response.json();
 
+        // Handle the case when no courses are available
         if (data.length === 0) {
           setError("No courses available.");
           setLoading(false);
           return;
         }
 
-        setCourses(data);
-        setFilteredCourses(data);
-        setLoading(false);
+        setCourses(data); // Save fetched courses
+        setFilteredCourses(data); // Initialize filtered courses
+        setLoading(false); // Set loading to false after fetching
       } catch (err) {
         setError(`Error fetching courses: ${(err as Error).message}`);
         setLoading(false);
@@ -60,21 +63,22 @@ const CourseSearch: React.FC = () => {
     fetchCourses();
   }, []);
 
-  /* Extracts department from course name (first word) */
+  // Extracts department code from the course code
   const getDepartment = (courseCode: string): string => {
-    return courseCode.split(" ")[0];
+    return courseCode.split(" ")[0]; // Splits the code and returns the department part
   };
 
-  /* Extracts level from course name (e.g., EECS 3311 -> 3000) */
+  // Extracts course level from the course code
   const getLevel = (courseCode: string): string => {
-    const match = courseCode.match(/\d{4}/);
-    return match ? match[0][0] + "000" : "";
+    const match = courseCode.match(/\d{4}/); // Extracts four-digit course level
+    return match ? match[0][0] + "000" : ""; // Returns the first digit followed by "000" (e.g., "1000")
   };
 
-  /* Filters courses based on search term, department, and level */
+  // Handles the search and filtering logic when the search button is clicked
   const handleSearchClick = () => {
     let results = courses;
 
+    // Filters courses based on search term
     if (searchTerm.trim()) {
       const searchNormalized = searchTerm.toLowerCase().trim();
       results = results.filter(course =>
@@ -83,25 +87,36 @@ const CourseSearch: React.FC = () => {
       );
     }
 
+    // Filters courses based on selected department
     if (department) {
       results = results.filter(course => getDepartment(course.course_Code) === department);
     }
 
+    // Filters courses based on selected level
     if (level) {
       results = results.filter(course => getLevel(course.course_Code) === level);
     }
 
-    setFilteredCourses(results);
-    setSelectedCourse(null); // Reset selected course
+    setFilteredCourses(results); // Updates the filtered courses state
+    setSelectedCourse(null); // Resets the selected course
   };
 
-  /* Toggles selection of a course */
+  // Handles selecting or deselecting a course
   const handleCourseClick = (course: Course) => {
-    setSelectedCourse(prev => (prev?._id === course._id ? null : course));
+    setSelectedCourse(prev => (prev?._id === course._id ? null : course)); // Toggles selection
   };
 
-  /* Extracts unique departments and levels from available courses */
+  // Handles clicking on prerequisite courses to show their details
+  const handlePrerequisiteClick = (courseCode: string) => {
+    const foundCourse = courses.find(course => course.course_Code === courseCode);
+    if (foundCourse) {
+      setSelectedCourse(foundCourse); // Updates selected course
+    }
+  };
+
+  // Gets unique department values from courses
   const uniqueDepartments = Array.from(new Set(courses.map(course => getDepartment(course.course_Code))));
+  // Gets unique course levels from courses
   const uniqueLevels = Array.from(new Set(courses.map(course => getLevel(course.course_Code))));
 
   return (
@@ -110,7 +125,7 @@ const CourseSearch: React.FC = () => {
       <div className="search-container">
         <h1>Course Compass</h1>
         <div className="filters">
-          {/* Search Input Field */}
+          {/* Search input */}
           <input
             type="text"
             placeholder="Enter course name..."
@@ -118,47 +133,36 @@ const CourseSearch: React.FC = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
 
-          {/* Department Dropdown */}
-          <select
-            className="dropdown"
-            value={department}
-            onChange={(e) => setDepartment(e.target.value)}
-          >
+          {/* Dropdown for department selection */}
+          <select className="dropdown" value={department} onChange={(e) => setDepartment(e.target.value)}>
             <option value="">All Departments</option>
             {uniqueDepartments.map(dept => dept && (
               <option key={dept} value={dept}>{dept}</option>
             ))}
           </select>
 
-          {/* Level Dropdown */}
-          <select
-            className="dropdown"
-            value={level}
-            onChange={(e) => setLevel(e.target.value)}
-          >
+          {/* Dropdown for course level selection */}
+          <select className="dropdown" value={level} onChange={(e) => setLevel(e.target.value)}>
             <option value="">All Levels</option>
             {uniqueLevels.map(level => level && (
               <option key={level} value={level}>{level}</option>
             ))}
           </select>
 
-
-          {/* Search Button */}
-          <button onClick={handleSearchClick} className="search-button">
-            Search
-          </button>
+          {/* Search button */}
+          <button onClick={handleSearchClick} className="search-button">Search</button>
         </div>
       </div>
 
       {/* Right Panel: Course List & Details */}
       <div className="course-details">
-        {/* Display loading state, error, or courses */}
         {loading ? (
-          <p>Loading courses...</p>
+          <p>Loading courses...</p> // Displays loading message while fetching
         ) : error ? (
-          <p>{error}</p>
+          <p>{error}</p> // Displays error message if fetching fails
         ) : !selectedCourse && filteredCourses.length > 0 ? (
           <div className="course-grid">
+            {/* Displays list of filtered courses */}
             {filteredCourses.map((course) => (
               <div key={course._id} className="course-card" onClick={() => handleCourseClick(course)}>
                 <div className="course-header">
@@ -169,57 +173,42 @@ const CourseSearch: React.FC = () => {
                 <p className="course-description">
                   {course.description ? `${course.description.substring(0, 80)}...` : "No description available."}
                 </p>
-
               </div>
             ))}
           </div>
-
         ) : !selectedCourse && filteredCourses.length === 0 ? (
-          /* Show message when no courses match the filters */
-          <p>No courses found.</p>
+          <p>No courses found.</p> // Message when no matching courses are found
         ) : null}
 
-        {/* Display selected course details */}
+        {/* Displays selected course details */}
         {selectedCourse && (
           <div className="selected-course">
-            <h2>{selectedCourse.course_Code}: {selectedCourse.course_Name} ({selectedCourse.credits}.0) </h2>
+            <h2>{selectedCourse.course_Code}: {selectedCourse.course_Name} ({selectedCourse.credits}.0)</h2>
             <p>{selectedCourse.description || "No description available."}</p>
-            <p><hr /></p>
+            <hr />
 
-            {/* Prerequisites & Post-requisites */}
+            {/* Displays Prerequisites */}
             <div className="requisites-container">
               <div className="requisite">
-                <p> <strong>Prerequisites:</strong>  </p>
+                <p><strong>Prerequisites:</strong></p>
                 <div className="course-box-container">
                   {selectedCourse.preRequisite && selectedCourse.preRequisite.length > 0 ? (
                     selectedCourse.preRequisite.map((item, index) => (
-                      <div key={index} className="course-box">{item}</div>
+                      <div 
+                        key={index} 
+                        className="course-box"
+                        onClick={() => handlePrerequisiteClick(item)}
+                      >
+                        {item}
+                      </div>
                     ))
-                  ) : (
-                    <div className="course-box">None</div>
-                  )}
-                </div>
-              </div>
-
-              <div className="requisite">
-                <p> <strong>Post-requisites:</strong>  </p>
-                <div className="course-box-container">
-                  {selectedCourse.postRequisite && selectedCourse.postRequisite.length > 0 ? (
-                    selectedCourse.postRequisite.map((item, index) => (
-                      <div key={index} className="course-box">{item}</div>
-                    ))
-                  ) : (
-                    <div className="course-box">None</div>
-                  )}
+                  ) : <div className="course-box">None</div>}
                 </div>
               </div>
             </div>
-
             <hr />
             {/* Button to return to search */}
-            <button onClick={() => setSelectedCourse(null)} className="close-button">
-              ✖  Return To Search
-            </button>
+            <button onClick={() => setSelectedCourse(null)} className="close-button">✖ Return To Search</button>
           </div>
         )}
       </div>
