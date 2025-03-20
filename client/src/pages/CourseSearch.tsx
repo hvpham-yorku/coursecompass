@@ -205,6 +205,23 @@ const CourseSearch: React.FC = () => {
                   ) : <div className="course-box">None</div>}
                 </div>
               </div>
+              {/* Displays Postrequisites */}
+              <div className="requisite">
+                <p><strong>Postrequisites:</strong></p>
+                <div className="course-box-container">
+                  {selectedCourse.postRequisite && selectedCourse.postRequisite.length > 0 ? (
+                    selectedCourse.postRequisite.map((item, index) => (
+                      <div 
+                        key={index} 
+                        className="course-box"
+                        onClick={() => handlePrerequisiteClick(item)}
+                      >
+                        {item}
+                      </div>
+                    ))
+                  ) : <div className="course-box">None</div>}
+                </div>
+              </div>
             </div>
             <hr />
             {/* Button to return to search */}
