@@ -41,6 +41,19 @@ router.post("/", async (req, res) => {
   }
 });
 
+// this section takes mulptile courses and adds them to the database
+router.post("/bulk", async (req, res) => {
+  try {
+    let newDocuments = req.body;
+    let collection = await db.collection("Courses");
+    let result = await collection.insertMany(newDocuments);
+    res.send(result).status(204);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Error adding Courses");
+  }
+});
+
 // This section will help you update a Courses by id.
 router.patch("/:id", async (req, res) => {
   try {
