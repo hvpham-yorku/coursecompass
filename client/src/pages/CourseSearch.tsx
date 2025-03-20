@@ -19,8 +19,8 @@ interface Course {
   course_Name: string;
   description?: string;
   credits?: string;
-  preRequisite?: string;
-  postRequisite?: string;
+  preRequisite?: string[];
+  postRequisite?: string[];
   professors?: Professor;
 }
 
@@ -189,16 +189,28 @@ const CourseSearch: React.FC = () => {
             {/* Prerequisites & Post-requisites */}
             <div className="requisites-container">
               <div className="requisite">
-                <strong>Prerequisites:</strong>
-                <div className="requisite-box">
-                  <p>{selectedCourse.preRequisite || "None"}</p>
+                <p> <strong>Prerequisites:</strong>  </p>
+                <div className="course-box-container">
+                  {selectedCourse.preRequisite && selectedCourse.preRequisite.length > 0 ? (
+                    selectedCourse.preRequisite.map((item, index) => (
+                      <div key={index} className="course-box">{item}</div>
+                    ))
+                  ) : (
+                    <div className="course-box">None</div>
+                  )}
                 </div>
               </div>
 
               <div className="requisite">
-                <strong>Post-requisites:</strong>
-                <div className="requisite-box">
-                  <p>{selectedCourse.postRequisite || "None"}</p>
+                <p> <strong>Post-requisites:</strong>  </p>
+                <div className="course-box-container">
+                  {selectedCourse.postRequisite && selectedCourse.postRequisite.length > 0 ? (
+                    selectedCourse.postRequisite.map((item, index) => (
+                      <div key={index} className="course-box">{item}</div>
+                    ))
+                  ) : (
+                    <div className="course-box">None</div>
+                  )}
                 </div>
               </div>
             </div>
