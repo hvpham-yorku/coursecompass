@@ -4,19 +4,19 @@ import "./CoursePage.css";
 
 /* Defines the structure for a professor object */
 interface Professor {
-  [key: string]: string; 
+  [key: string]: string;
 }
 
 /* Defines the structure for a Course object */
 interface Course {
-  _id: string; 
-  course_Code: string; 
-  course_Name: string; 
-  description?: string; 
-  credits?: string; 
-  preRequisite?: string[]; 
-  postRequisite?: string[]; 
-  professors?: Professor; 
+  _id: string;
+  course_Code: string;
+  course_Name: string;
+  description?: string;
+  credits?: string;
+  preRequisite?: string[];
+  postRequisite?: string[];
+  professors?: Professor;
 }
 
 const CourseSearch: React.FC = () => {
@@ -36,6 +36,7 @@ const CourseSearch: React.FC = () => {
   const [level, setLevel] = useState<string>("");
   // State for storing the filtered course list
   const [filteredCourses, setFilteredCourses] = useState<Course[]>([]);
+  const [credit, setCredit] = useState<string>("");
 
   // Fetches courses from the backend when the component mounts
   useEffect(() => {
@@ -97,6 +98,12 @@ const CourseSearch: React.FC = () => {
       results = results.filter(course => getLevel(course.course_Code) === level);
     }
 
+    // Filters courses based on selected credit amount
+    if (credit) {
+      results = results.filter(course => String(course.credits) === credit);
+    }
+
+
     setFilteredCourses(results); // Updates the filtered courses state
     setSelectedCourse(null); // Resets the selected course
   };
@@ -149,6 +156,15 @@ const CourseSearch: React.FC = () => {
             ))}
           </select>
 
+          {/* Dropdown for credit selection */}
+          <select className="dropdown" value={credit} onChange={(e) => setCredit(e.target.value)}>
+            <option value="">All Credits</option>
+            {Array.from(new Set(courses.map(course => course.credits))).filter(Boolean).map(creditValue => (
+              <option key={creditValue} value={creditValue}>{creditValue}</option>
+            ))}
+          </select>
+
+
           {/* Search button */}
           <button onClick={handleSearchClick} className="search-button">Search</button>
         </div>
@@ -194,8 +210,8 @@ const CourseSearch: React.FC = () => {
                 <div className="course-box-container">
                   {selectedCourse.preRequisite && selectedCourse.preRequisite.length > 0 ? (
                     selectedCourse.preRequisite.map((item, index) => (
-                      <div 
-                        key={index} 
+                      <div
+                        key={index}
                         className="course-box"
                         onClick={() => handlePrerequisiteClick(item)}
                       >
@@ -211,8 +227,8 @@ const CourseSearch: React.FC = () => {
                 <div className="course-box-container">
                   {selectedCourse.postRequisite && selectedCourse.postRequisite.length > 0 ? (
                     selectedCourse.postRequisite.map((item, index) => (
-                      <div 
-                        key={index} 
+                      <div
+                        key={index}
                         className="course-box"
                         onClick={() => handlePrerequisiteClick(item)}
                       >
