@@ -80,29 +80,34 @@
   background: #e60000;
 }
 
-/* Professors Section */
-.selected-course h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
-  color: #222;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 6px;
+.tab-buttons {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 1rem;
+  gap: 8px;
 }
 
-/* Professor Cards */
-.professor-card {
-  background: #f9f9f9;
-  padding: 10px;
-  border-radius: 6px;
+.tab-button {
+  padding: 10px 20px;
   font-size: 16px;
-  color: #333;
-  border-left: 4px solid #007bff;
-  margin-top: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 600;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
 }
 
-.professor-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+.tab-button:hover {
+  background: rgba(223, 72, 22, 0.658);
+  border-color: rgba(223, 72, 22, 0.658);
+  color: white;
+}
+
+.tab-button.active {
+  background: #007bff;
+  color: white;
+  border-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
 }
