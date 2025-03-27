@@ -1,0 +1,1144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML lang = "en">
+<HEAD>
+	<META NAME="generator" CONTENT="WebObjects 5">
+	<TITLE>York University Courses Website - Courses Schedule</TITLE>
+	<link rel="stylesheet" type="text/css" media="all" href="https://headers.apps01.yorku.ca/yorkweb/css/styles.css" />
+	<LINK rel="stylesheet" href="https://passportyork.yorku.ca/yorkweb/standards/web/css/main.css">
+	<style>
+		.aoda_lable{ 
+		    border: 0;
+		    clip: rect(0 0 0 0);
+		    height: 1px;
+		    margin: -1px;
+		    overflow: hidden;
+		    padding: 0;
+		    position: absolute;
+		    width: 1px;
+		}
+		.bold{
+			font-weight: bold;
+		}	
+	</style>
+	<META NAME="ROBOTS" CONTENT="NOFOLLOW">
+	<LINK REL="SHORTCUT ICON" HREF="/favicon.ico">
+	<script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-59339533-3', 'auto');  ga('send', 'pageview');</script>
+</HEAD>
+<BODY>
+
+<TABLE WIDTH=960 BORDER=0 CELLSPACING=0 CELLPADDING=0>
+	<TR>
+		<TD COLSPAN=2>
+
+<div class="yib11skipnav"><a href="#content">Skip to main content</a></div>
+
+<div id="yib11banner"> 
+
+	<div id="yib11yorklogo"><a href="http://www.yorku.ca/"><img border="0" src="http://www.yorku.ca/yorkweb/standards/images/yib11yorklogo.gif" alt="York University - Redefine the Possible" width="115" height="50"/></a></div>
+    
+	<div id="yib11globalnava"> 
+    	<a href="http://www.glendon.yorku.ca/">Glendon Campus</a>
+        <a href="http://www.yorku.ca/alumni/">Alumni</a>
+        <a href="http://www.yorku.ca/research/">Research</a>
+        <a href="http://www.yorku.ca/development/">Giving to York</a>
+        <a href="http://news.yorku.ca/">Media</a>
+        <a href="http://www.yorku.ca/web/careers_at_yorku/">Careers</a>
+        <a href="http://www.yorku.ca/yorkweb/international.htm">International</a>
+        <span class="yib11globalnavalast"><a href="http://www.yorkulions.ca/">York U Lions</a></span> 
+        <span class="yib11accessibility"><a href="http://www.yorku.ca/web/accessibility.html">Accessibility</a></span> 
+    </div> 
+  
+    <div id="yib11globalnavb"> 
+        <a href="http://futurestudents.yorku.ca/">Future Students</a>
+        <a href="http://www.yorku.ca/yorkweb/cs.htm">Current Students</a>
+        <a href="http://www.yorku.ca/yorkweb/fs.htm">Faculty and Staff</a>
+        <form method="get" action="http://search.yorku.ca/search">
+        	<label for="yib11searchfield" class="aoda_lable">Search yorku.ca</label>
+ 			<input maxlength="255" onclick="if (!this.cleared) { this.cleared = true; this.value = ''; }" name="q" id="yib11searchfield" type="text" value="Search yorku.ca"/>
+ 			<label for="yib11searchbutton" class="aoda_lable">Go</label>
+            <input border="0" src="http://www.yorku.ca/yorkweb/standards/images/yib11searchbutton.gif" alt="GO" name="btnG" width="30" id="yib11searchbutton" type="image" height="18"/>
+ 			<input name="client" type="hidden" value="Internal"/>
+ 			<input name="proxystylesheet" type="hidden" value="Internal"/>
+ 			<input name="site" type="hidden" value="default_collection"/>
+ 			<input name="output" type="hidden" value="xml_no_dtd"/>
+		</form>
+     </div>
+      
+	<div id="yib11internalnav"> 
+        <a href="http://www.yorku.ca/web/about_yorku/faculties.html">Faculties</a>
+        <a href="http://www.library.yorku.ca/">Libraries</a>
+        <a href="http://www.yorku.ca/web/about_yorku/organization.html">York U Organization</a>
+        <a href="http://www.yorku.ca/yorkatlas">Directory</a>
+        <a href="http://www.yorku.ca/web/site-index.html">Site Index</a>
+        <a href="http://www.yorku.ca/web/futurestudents/map/" class="yib11internalnavlast">Campus Maps</a>
+    </div> 
+
+</div>
+
+</TD>
+	</TR>
+	<TR>
+		<TD P="" VALIGN=top BGCOLOR=#dddddd CLASS=bodytext>
+			<TABLE WIDTH=170 BORDER=0 CELLSPACING=0 CELLPADDING=0 role="navigation">
+				<TR>
+					<TD>
+						
+							<a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.1.1"><img alt="York Course Web Site" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/title.gif" width="170" height="89" /></a>
+						
+						
+					</TD>
+				</TR>
+				<TR>
+					<TD><img alt="Current Course Search By ... " src="/WebObjects/cdm.woa/Contents/WebServerResources/searchby.gif" width="170" height="59" /></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.8.0"><img alt="Search By Subject" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/subject_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.11.0"><img alt="Search By Term" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/term_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.14.0"><img alt="Search By Course Title" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/title_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.17.0"><img alt="Search By Course Campus" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/campus_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.19.2.0"><img alt="Search By Instructor" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/instructor_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.22.0"><img alt="General Education Course" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/gen_edu_N.gif" width="170" height="29" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.25.0"><img alt="eLearn Course Search" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/distance_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.28.0"><img alt="After 6pm Course Search" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/after6pm_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.31.0"><img alt="Weekend Course Search" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/weekend_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.34.0"><img alt="Advanced Search" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/advanced_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.37.0"><img alt="View Active Course Timetables" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/activecourse_N.gif" width="180" height="36" /></a></TD>
+				</TR>
+				<TR>
+					<TD>&nbsp;</TD>
+				</TR>
+				<TR><TD><img alt="My Class Schedule ... " src="/WebObjects/cdm.woa/Contents/WebServerResources/class_sched_header.gif" width="170" height="18" /></TD></TR><TR>
+					<TD><a href="https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm.woa/wa/DirectAction/cds"><img alt="Plot My Timetable" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/timetable_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.45.0"><img alt="Timetable Help" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/Plothelp_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><img alt="Exam Information ..." src="/WebObjects/cdm.woa/Contents/WebServerResources/examinformation.gif" width="170" height="37" /></TD>
+				</TR>
+				<TR>
+					<TD><a href="https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm.woa/wa/curexam"><img alt="Search Current Exam Schedule" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/exam_N.gif" width="170" height="36" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="https://w2prod.sis.yorku.ca/Apps/WebObjects/cdm.woa/wa/DirectAction/cde"><img alt="My Exam Schedule" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/myexams_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.56.0"><img alt="Exam Conflicts" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/conflicts_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.59.0"><img alt="Building Acronyms" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/building_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a target="RO" href="https://myacademicrecord.students.yorku.ca/deferred-standing"><img alt="Deferred Exam : FAQ" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/deferred_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.64.0"><img alt="Religious Observances" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/religious_N.gif" width="170" height="36" /></a></TD>
+				</TR>
+				<TR>
+					<TD>&nbsp;</TD>
+				</TR>
+				<TR>
+					<TD><img alt="Course Search By ... " src="/WebObjects/cdm.woa/Contents/WebServerResources/historicalsearch.gif" width="170" height="18" /></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.69.0"><img alt="Historical Course Search By Faculty, Subject, Number" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/facSubNum_N.gif" width="170" height="30" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.72.0"><img alt="Historical Course Search By Course Title" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/crstitle_N.gif" width="170" height="26" /></a></TD>
+				</TR>
+				
+					<TR>
+						<TD>&nbsp;</TD>
+					</TR>
+					<TR>
+						<TD><img alt="Course Evaluation Search" src="/WebObjects/cdm.woa/Contents/WebServerResources/courseEvaluationSearch.gif" width="170" height="18" /></TD>
+					</TR>
+					<TR>
+						<TD><a target="DE" href="https://courseevaluations.yorku.ca/studenthelp"><img alt="Course Evaluation Search FAQ" src="/WebObjects/cdm.woa/Contents/WebServerResources/courseEvaluationSearchFAQ_N.gif" width="170" height="18" /></a></TD>
+					</TR>
+					<TR>
+						<TD><a target="DE" href="https://onceciq.uit.yorku.ca/"><img alt="Course Evaluation Search Results" src="/WebObjects/cdm.woa/Contents/WebServerResources/courseEvaluationSearchResults_N.gif" width="170" height="36" /></a></TD>
+					</TR>						
+								
+				<TR>
+					<TD><img alt="Course Information ..." src="/WebObjects/cdm.woa/Contents/WebServerResources/Course_Info_Header.gif" width="170" height="36" /></TD>
+				</TR>
+				<TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.79.0"><img alt="FAQ" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/faq_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a target="RO" href="https://registrar.yorku.ca/enrol/dates/"><img alt="Important Dates" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/dates_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR><TD><a target="RO" href="https://registrar.yorku.ca/enrol/guide/"><img alt="Enrolment and Registration Guide" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/enrolguides_N.gif" width="170" height="36" /></a></TD></TR><TR>
+					<TD><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.4.85"><img alt="Timetables" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/timetables_N.gif" width="180" height="18" /></a></TD>
+				</TR>
+				<TR>
+					<TD><a target="RO" href="https://registrar.yorku.ca/accal/"><img alt="University Calendars" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/calendars_N.gif" width="170" height="18" /></a></TD>
+				</TR>
+				<TR><TD><a target="RO" href="https://registrar.yorku.ca/enrol/guide/disclaimer"><img alt="Disclaimer" border="0" src="/WebObjects/cdm.woa/Contents/WebServerResources/disclaimer_N.gif" width="170" height="18" /></a></TD></TR>
+				<TR>
+					<TD>&nbsp;<img alt="spacer line" src="/WebObjects/cdm.woa/Contents/WebServerResources/bottom_spacer.gif" width="170" height="45" /></TD>
+				</TR>
+			</TABLE>
+
+
+		</TD>
+		<TD VALIGN=TOP>
+			<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=0>
+				<TR>
+					<TD>      
+						<TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+			              <TR> 
+					          <TD width="443" background="https://w2prod.sis.yorku.ca/WebObjects/YorkUimages/banner_bg.gif">
+								<img alt="search course timetables section" src="/WebObjects/cdm.woa/Contents/WebServerResources/searchcurrcrs.png" width="443" height="43" />
+							   </TD>
+					          <TD background="https://w2prod.sis.yorku.ca/WebObjects/YorkUimages/banner_bg.gif">&nbsp;</TD>
+					       </TR>
+				         </TABLE>
+  					</TD>
+ 				</TR>
+				<TR>
+					<TD>
+						<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=10>
+							<TR>
+								<TD>
+	<TABLE WIDTH=100% BORDER=0 CELLSPACING=0 CELLPADDING=10><TR><TD><p CLASS=heading><h1 style = "COLOR:#CC0000">AP/ADMS 3660   3.00 &nbsp;&nbsp;Business Ethics and Corporate Social Responsibility</h1><a name="content" id="content"></a></p></TD><TD><DIV ALIGN=right><SCRIPT LANGUAGE=JavaScript>
+function Get_Cookie(name) {
+    var start = document.cookie.indexOf(name+"=");
+    var len = start+name.length+1;
+    if ((!start) && (name != document.cookie.substring(0,name.length))) return null;
+    if (start < 14) return null;
+    var end = document.cookie.indexOf(";",len);
+    if (end < 14) end = document.cookie.length;
+    return unescape(document.cookie.substring(len,end));
+}
+var crumb = unescape(document.cookie);
+if (crumb.indexOf('mayaauth') != -1 || crumb.indexOf('mayaanyoneauth') != -1 ) {
+  document.write('<TABLE width="200" cellpadding="5" cellspacing="0" border="0"><TR><TD><P><a href="https://passportyork.yorku.ca/ppylogin/ppylogout"><IMG src="https://w2prod.sis.yorku.ca/WebObjects/YorkUimages/logout.gif" width="154" height="45" border="0"></a><BR><SPAN class="smallbodytext"><!-- <a href="http://www.yorku.ca/yorkweb/currentstudents/ppystudents.html"> --><a href="https://registrar.yorku.ca/enrol/guide/ppy">All About Passport York</A></SPAN></P></TD></TR></TABLE>')
+} else {
+document.write('<TABLE border="0"><TR><TD><img src="https://w2prod.sis.yorku.ca/WebObjects/YorkUimages/passportyorksmall2.gif" alt = "passport york" width="73" height="42"></TD><TD><strong>New Student?</strong><BR><!-- <a href="http://www.yorku.ca/yorkweb/currentstudents/ppystudents.html"> --><a href="https://registrar.yorku.ca/enrol/guide/ppy">All about Passport&nbsp;York</a></TD></TR></TABLE>')
+}
+</SCRIPT></DIV></TD></TR></TABLE><HR><P></P>
+	<P class = "bold">Course Description:</P>
+	<P>Introduces students to the relevance and importance of business ethics and corporate social responsibility. The course applies moral theory to the treatment by business of various stakeholder groups including: shareholders; employees; consumers; governments; communities; and the natural environment. Prerequisite: AP/ADMS 1000 3.00.</P>
+	<P class = "bold">Language of Instruction:</P>
+	<P>English</P>
+	<P>
+	
+	 </P>
+	<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0 WIDTH=100%>
+		
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term F </span>&nbsp;&nbsp;&nbsp;&nbsp;Section A</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.0.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Sophia&nbsp;Kusyk&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">LECT01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">E95H01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.0.0.12.0.14.0.0.0">Sophia&nbsp;Kusyk</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2024f-apadms3660a-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term F </span>&nbsp;&nbsp;&nbsp;&nbsp;Section B</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.1.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Cedric&nbsp;Dawkins&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">BLEN01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">V42P01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.1.0.12.0.14.0.0.0">Cedric&nbsp;Dawkins</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2024f-apadms3660b-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term F </span>&nbsp;&nbsp;&nbsp;&nbsp;Section C</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.2.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Anton&nbsp;Petrenko&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">LECT01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">Z89B01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.2.0.12.0.14.0.0.0">Anton&nbsp;Petrenko</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2024f-apadms3660c-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term F </span>&nbsp;&nbsp;&nbsp;&nbsp;Section D</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.3.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Cedric&nbsp;Dawkins&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">BLEN01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">X36K01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.3.0.12.0.14.0.0.0">Cedric&nbsp;Dawkins</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2024f-apadms3660d-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term F </span>&nbsp;&nbsp;&nbsp;&nbsp;Section E</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.4.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Alan&nbsp;Kleinman&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">ONLN01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">B83T01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.4.0.12.0.14.0.0.0">Alan&nbsp;Kleinman</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2024f-apadms3660e-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term F </span>&nbsp;&nbsp;&nbsp;&nbsp;Section F</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.5.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Alan&nbsp;Kleinman&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">LECT01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">S30E01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.5.0.12.0.14.0.0.0">Alan&nbsp;Kleinman</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2024f-apadms3660f-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term F </span>&nbsp;&nbsp;&nbsp;&nbsp;Section G</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.6.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Cedric&nbsp;Dawkins&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">BLEN01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">Y77N01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.6.0.12.0.14.0.0.0">Cedric&nbsp;Dawkins</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2024f-apadms3660g-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term W </span>&nbsp;&nbsp;&nbsp;&nbsp;Section M</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.7.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Steven&nbsp;Pinter&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">BLEN01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">F24W01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.7.0.12.0.14.0.0.0">Steven&nbsp;Pinter</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2025w-apadms3660m-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term W </span>&nbsp;&nbsp;&nbsp;&nbsp;Section N</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.8.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Alan&nbsp;Kleinman&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">LECT01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">V71H01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.8.0.12.0.14.0.0.0">Alan&nbsp;Kleinman</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2025w-apadms3660n-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term W </span>&nbsp;&nbsp;&nbsp;&nbsp;Section O</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.9.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Sophia&nbsp;Kusyk&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">BLEN01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">P18Q01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.9.0.12.0.14.0.0.0">Sophia&nbsp;Kusyk</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2025w-apadms3660o-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term W </span>&nbsp;&nbsp;&nbsp;&nbsp;Section P</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.10.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Anton&nbsp;Petrenko&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">LECT01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">X65C01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.10.0.12.0.14.0.0.0">Anton&nbsp;Petrenko</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2025w-apadms3660p-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term W </span>&nbsp;&nbsp;&nbsp;&nbsp;Section Q</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.11.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Anton&nbsp;Petrenko&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">LECT01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">C12Y01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.11.0.12.0.14.0.0.0">Anton&nbsp;Petrenko</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2025w-apadms3660q-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term W </span>&nbsp;&nbsp;&nbsp;&nbsp;Section R</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.12.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Allan J&nbsp;Greenbaum&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">LECT01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">S59T01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.12.0.12.0.14.0.0.0">Allan J&nbsp;Greenbaum</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2025w-apadms3660r-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term W </span>&nbsp;&nbsp;&nbsp;&nbsp;Section S</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.13.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">Section Director: 
+	                 Not Available
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">LECT01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              &nbsp;
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">Cancelled<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%">&nbsp;</TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2025w-apadms3660s-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+            <TR>
+              <TD>
+                <TABLE WIDTH = "100%">
+                  <TR>
+                    <TD bgcolor = "#CC0000" class = "bodytext" WIDTH = "50%"><span style = "COLOR: #ffffff"><span class = "bold">Term W </span>&nbsp;&nbsp;&nbsp;&nbsp;Section T</span></TD>
+                    <TD class = "bodytext"></TD>
+                    <TD class = "bodytext" align = "RIGHT"><!-- <a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.14.0.5">Description</a> --> </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+	                 <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see availability.<BR /></a>
+	                 Section Director: 
+	                 
+	                 Cedric&nbsp;Dawkins&nbsp;&nbsp;&nbsp;
+	                 
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD colspan = "3">
+                      <TABLE border = "5" WIDTH = "100%">
+                        <TR>
+                          <TD class = "bold" WIDTH = "10%">Type</TD>
+                          <TD WIDTH = "35%">
+                            <TABLE cellpadding = "0" cellspacing = "0" border = "0" WIDTH = "100%">
+                              <TR>
+                                <TD class = "bold" WIDTH = "15%">Day</TD>
+                                <TD class = "bold" WIDTH = "20%">Start<BR /> Time</TD>
+                                <td class = "bold" WIDTH = "20%">Duration</TD>
+                                <td class = "bold" WIDTH = "25%">Location</TD>
+                                <td class = "bold" WIDTH = "20%">Campus</TD>
+                              </TR>
+                            </TABLE>
+                          </TD>
+                          <TD class = "bold" WIDTH = "20%">Cat #</TD>
+                          <TD class = "bold" WIDTH = "15%">Instructor</TD>
+                          <TD class = "bold" WIDTH = "20%">Notes/Additional Fees</TD>
+                        </TR>
+                        
+                        <TR>
+                            <TD WIDTH = "10%" valign = "TOP">ONLN01</TD>
+                            <TD valign = "TOP" WIDTH = "35%">
+                              <a href="/Apps/WebObjects/cdm.woa/wa/loginppy?url=/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/2.3.10.8.3.80.0.5">Please click here to see details.<br /></a>
+                              
+                           </TD>
+                           <TD WIDTH = "20%" valign = "TOP">F53Z01<BR /></TD>
+                           <TD valign = "TOP" WIDTH = "15%"><a href="/Apps/WebObjects/cdm.woa/9/wo/80VQjWk18zbDNTZXyVh6f0/83.3.10.23.14.0.12.0.14.0.0.0">Cedric&nbsp;Dawkins</a><BR /></TD>
+                           <TD valign = "TOP" WIDTH = "20%"><a href=https://course-outlines.laps.yorku.ca/outlines/2025w-apadms3660t-03/>Course Outline</a><br/>&nbsp;</TD>
+                        </TR>
+                        
+                      </TABLE>
+                    </TD>
+                  </TR>
+                </TABLE><BR /><BR />
+              </TD>
+            </TR>
+          
+        
+	</TABLE><P></P>
+</TD>
+							</TR>
+						</TABLE>
+					</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+	<TR>
+      <TD BGCOLOR=#dddddd WIDTH=10%><img alt="York University Logo" src="/WebObjects/cdm.woa/Contents/WebServerResources/y.gif" width="170" height="90" /></TD>
+      <td valign="bottom">
+	      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+           <tr>
+            <td><HR></td>
+           </tr>
+            <tr>
+            <td class="smallbodytext">
+            <div align="right">York Course Website Version 2.2.7 (Dec 02, 2024)<BR>Copyright 2005-2025 &copy; York University<br>
+            <br>
+            </div>
+            </td>
+            </tr>
+           </tbody>
+           </table>
+      </td>	
+    </TR>
+	<TR>
+		 <td CLASS=smallbodytext BGCOLOR=#dddddd WIDTH=10%>
+   	    	    <div align="center">[PU11] 
+					<br>
+		            <br>
+	           </div>
+            </td>
+		<TD></TD>	
+	</TR>
+</TABLE>
+</BODY>
+</HTML>

@@ -63,9 +63,9 @@ search_link = soup.find("form", {"name":"courseCampusForm"}).get('action')
 # send the request to get all the courses in keele
 courseSearch_form_data = {
     "sessionPopUp":0,
-    "selectCampusBox":3,
+    "selectCampusBox":2,
     "3.10.7.5":"Search Courses",
-    "wosid":wosid
+    #"wosid":wosid
 }
 all_course_page = requests.post(
     search_link,
@@ -73,8 +73,53 @@ all_course_page = requests.post(
     data=courseSearch_form_data
 )
 
+#with open("output.txt","w") as text_file:
+#    text_file.write(all_course_page.text)
+
 soup = BeautifulSoup(all_course_page.text,"lxml")
 
-tables_tags = soup.find_all("table")
+tables_tags = soup.find_all("table")[6].find_all('tr')
 
-print(len(tables_tags[0].find_all('tr')))
+del tables_tags[0]
+
+for tag in tables_tags:
+
+    info = tag.text.split("\n")
+
+    collected = {
+        "COURSE_CODE" : info[1],
+        "COURSE_NAME" : info[2],
+        "COURSE_CREDIT" : info[1][-4:-1]
+    }
+    print(collected)
+
+
+    info_link = tag.find("a").get("href")
+
+    more_info = requests.get(
+        base_url+info_link,
+        headers=headers,
+    )
+
+    soup = BeautifulSoup(more_info.text, "lxml")
+    table_with_each_section = soup.find_all("table")[6]
+
+    each_section = table_with_each_section.find_all("tr",recursive=False)
+
+    for sec in each_section:
+        soup = BeautifulSoup(sec.text, "lxml")
+        instructor_tags = soup.find_all("a")
+
+        # Extract and print the instructor names
+        instructor_names = [tag.get_text() for tag in instructor_tags]
+
+        instructor_names = list(
+            filter(
+                lambda x: x != "Please click here to see details."
+                and x != "Please click here to see availability.",
+                instructor_names,
+            )
+        )
+
+        print(collected["COURSE_CODE"], instructor_names)
+
