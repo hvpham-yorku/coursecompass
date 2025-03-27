@@ -1,0 +1,81 @@
+/* Page Layout */
+.course-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Search Bar */
+.search-container {
+  width: 40vw;
+  max-width: 400px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  border-right: 2px solid #ddd;
+  background-color: #f8f9fa;
+  color: black;
+}
+
+/* Search Title */
+.search-container h1 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Search Filters */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Field */
+input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+  width: 94%;
+  padding: 12px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+}
+
+/* Search Button */
+.search-button {
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #00b3ff;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  color: #333;
+  font-size: 16px;
+}
+
+.content-panel {
+  margin-top: 35px;
+}

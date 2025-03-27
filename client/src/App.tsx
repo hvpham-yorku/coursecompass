@@ -1,4 +1,4 @@
-import CourseSearch from "./pages/CourseSearch"; 
+import CourseSearch from "./components/CourseSearch"; 
 
 const App = () => {
   return <CourseSearch />;

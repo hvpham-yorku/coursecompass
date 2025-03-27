@@ -1,0 +1,57 @@
+
+/* Course Grid Layout */
+.course-grid {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    height: 85vh;
+    width: 150%;
+
+    overflow-y: auto;
+    padding: 30px;
+
+    margin: auto;
+    color: black;
+
+  }
+  
+  /* Individual Course Card */
+  .course-card {
+    background: #e6e6e6;
+    padding: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: fit-content;
+    font-size: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .course-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+  }
+  
+  /* Course Header */
+  .course-header {
+    font-weight: bold;
+  }
+  
+  /* Course Title */
+  .course-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Course Description */
+  .course-description {
+    font-size: 14px;
+    color: #444;
+  }
+  
