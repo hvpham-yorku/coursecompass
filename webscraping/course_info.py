@@ -91,8 +91,8 @@ for tag in tables_tags:
         "COURSE_NAME" : info[2],
         "COURSE_CREDIT" : info[1][-4:-1]
     }
-    print(collected)
 
+    ################################### getting profs ################################
 
     info_link = tag.find("a").get("href")
 
@@ -101,15 +101,15 @@ for tag in tables_tags:
         headers=headers,
     )
 
-    soup = BeautifulSoup(more_info.text, "lxml")
-    table_with_each_section = soup.find_all("table")[6]
+    info_soup = BeautifulSoup(more_info.text, "lxml")
+    table_with_each_section = info_soup.find_all("table")[6]
 
     each_section = table_with_each_section.find_all("tr",recursive=False)
 
-    for sec in each_section:
-        soup = BeautifulSoup(sec.text, "lxml")
-        instructor_tags = soup.find_all("a")
+    prof_list = []
 
+    for sec in each_section:
+        instructor_tags = sec.find_all("a",href=True)
         # Extract and print the instructor names
         instructor_names = [tag.get_text() for tag in instructor_tags]
 
@@ -117,9 +117,28 @@ for tag in tables_tags:
             filter(
                 lambda x: x != "Please click here to see details."
                 and x != "Please click here to see availability.",
-                instructor_names,
+                instructor_names
             )
         )
 
-        print(collected["COURSE_CODE"], instructor_names)
+        instructor_names = [ name.replace("\xa0", " ") for name in instructor_names]
+
+        prof_list.extend(instructor_names)
+
+    collected["proffessor"] = prof_list
+
+    ##################################### get Description ##################################
+
+    p_tags = info_soup.find_all('p')
+
+    for i in range(len(p_tags) - 1):
+        if "Course Description:" in p_tags[i].text:
+            des = p_tags[i+1].text.strip()
+            collected["description"] = des
+    
+    print(collected)
+
+    #################################### get preRequisites #################################
+
+    
 
