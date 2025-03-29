@@ -21,13 +21,13 @@ Course Compass brings everything students need for course selection into **one e
 
 ## Installation
 
-### ⚙️ Prerequisites
+### Prerequisites
 
 Before running the project, ensure you have the following installed:
 
 - **[Node.js](https://nodejs.org/)** – backend
 
-### 🖥️ Backend Setup
+### Backend Setup
 
 ```bash
 # Clone the repository
