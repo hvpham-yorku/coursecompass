@@ -21,18 +21,18 @@ By the end of this sprint, students should be able to **search for any course an
 
 ---
 
-## **User Stories for Sprint 1**
+## **User Stories for Sprint 2**
 This sprint covers the following **user stories**, grouped by related functionality:
 
 ### **1. Professor and Course Rating**
-- 15. *As a second-year student, I want to see a list of professors who are teaching a course so that I can make an informed decision on selecting a professor.*  
-- 16. *As a third-year student, I want to sort professors by their rating so that I can find highly-rated instructors for my courses* 
- - 18. *As a student, I want to see a list of top-rated professors for my major so that I can choose courses taught by well-regarded instructors.*  
+- *As a second-year student, I want to see a list of professors who are teaching a course so that I can make an informed decision on selecting a professor.*  
+- *As a third-year student, I want to sort professors by their rating so that I can find highly-rated instructors for my courses* 
+ - *As a student, I want to see a list of top-rated professors for my major so that I can choose courses taught by well-regarded instructors.*  
 
 ### **2. Improved UI**  
-- 17. *As a TA, I want to search for professors by name so that I can quickly find what courses they teach *  
-- 19. *As a student who spends long hours on my computer, I want a dark mode option so that I can reduce eye strain while browsing course information.*  
-- 20. *As a new student, I want an auto-suggest feature in the search bar so that I can quickly find courses by typing partial names or codes.*  
+- *As a TA, I want to search for professors by name so that I can quickly find what courses they teach *  
+- *As a student who spends long hours on my computer, I want a dark mode option so that I can reduce eye strain while browsing course information.*  
+- *As a new student, I want an auto-suggest feature in the search bar so that I can quickly find courses by typing partial names or codes.*  
 
 ---
 
@@ -51,9 +51,9 @@ Each team member has committed to working on Sprint 1 tasks based on expertise:
 | Team Member       | Role                 | Responsibilities |
 |-------------------|----------------------|-----------------|
 | Julia Da Silva   | Frontend Developer    | UI/UX design, implementing search and prerequisite/post-requisite links |
-| Gurjap Hajra     | Backend Developer     | API integration for course search, database setup |
-| Rizikeshan Asohan | Full Stack Developer | Connecting frontend and backend for search & prerequisite features |
-| Sam Antoun       | QA & Documentation    | Testing, writing documentation, reviewing pull requests |
+| Gurjap Hajra     | Backend Developer     | Completing webscrapping|
+| Rizikeshan Asohan | QA & Documentation | Testing, writing documentation, reviewing pull requests|
+| Sam Antoun       | Full Stack Developer | API integration for professor ratings|
 
 ---
 
