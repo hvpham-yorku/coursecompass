@@ -12,10 +12,11 @@ Course Compass was created to **simplify university course selection**. Many stu
 
 ### Why It Exists
 
-Course Compass brings everything students need for course selection into **one easy-to-use platform**. It allows them to:  
-**Quickly search for courses**  
-**See prerequisites, professor ratings, and workload estimates in one place**  
-**Plan their schedules without switching between multiple sites**
+Course Compass brings everything students need for course selection into **one easy-to-use platform**. 
+It allows them to:  
+- **Quickly search for courses**  
+- **See prerequisites, professor ratings, and workload estimates in one place**  
+- **Plan their schedules without switching between multiple sites**
 
 ---
 
