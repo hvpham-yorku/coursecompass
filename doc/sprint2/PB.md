@@ -1,4 +1,4 @@
-# Product Backlog
+# Sprint 2 Product Backlog
 
 15. *As a second-year student, I want to see a list of professors who have previously taught a course so that I can make an informed decision on selecting a professor.*  
 
