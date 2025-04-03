@@ -1,12 +1,14 @@
 /* Course Details */
 .selected-course {
   margin: auto;
-  width: 90%;
-  padding: 50px;
+  width: 940px;
+  height: 540px;
+  padding: 60px;
+  padding-top: 10px;
   background-color: white;
-  margin-top: 130px;
+  margin-top: 50px;
   color: black;
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* Course Title */
@@ -50,6 +52,7 @@
   font-size: 14px;
   font-weight: bold;
   border-radius: 5px;
+  border-style: dotted;
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
