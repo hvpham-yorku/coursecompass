@@ -16,6 +16,7 @@ const CourseDetails: React.FC<Props> = ({ selectedCourse, handlePrerequisiteClic
 
   return (
     <div className="selected-course">
+      <button onClick={() => setSelectedCourse(null)} className="close-button">✖ Return To Search</button>
       <h2>{selectedCourse.course_Code}: {selectedCourse.course_Name} ({selectedCourse.credits}.0)</h2>
 
       {/* Toggle Buttons */}
@@ -101,7 +102,7 @@ const CourseDetails: React.FC<Props> = ({ selectedCourse, handlePrerequisiteClic
 
       <hr />
 
-      <button onClick={() => setSelectedCourse(null)} className="close-button">✖ Return To Search</button>
+      
     </div>
   );
 };
