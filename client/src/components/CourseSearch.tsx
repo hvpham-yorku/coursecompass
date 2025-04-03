@@ -61,11 +61,17 @@ const CourseSearch: React.FC = () => {
 
     if (searchTerm.trim()) {
       const searchNormalized = searchTerm.toLowerCase().trim();
-      results = results.filter(course =>
-        course.course_Code.toLowerCase().includes(searchNormalized) ||
-        (course.course_Name && course.course_Name.toLowerCase().includes(searchNormalized))
-      );
-    }
+    
+      results = results.filter(course => {
+        const courseNameMatch = course.course_Name?.toLowerCase().includes(searchNormalized);
+        const courseCodeMatch = course.course_Code.toLowerCase().includes(searchNormalized);
+        const professorMatch = course.professors && Object.keys(course.professors).some(prof =>
+          prof.toLowerCase().includes(searchNormalized)
+        );
+    
+        return courseNameMatch || courseCodeMatch || professorMatch;
+      });
+    }    
 
     if (department) {
       results = results.filter(course => course.course_Code.startsWith(department));
@@ -87,7 +93,7 @@ const CourseSearch: React.FC = () => {
     <div className="course-container">
       {/* Search Panel */}
       <div className="search-panel">
-        <SearchFilters 
+        <SearchFilters
           searchTerm={searchTerm} setSearchTerm={setSearchTerm}
           department={department} setDepartment={setDepartment}
           level={level} setLevel={setLevel}
@@ -102,10 +108,10 @@ const CourseSearch: React.FC = () => {
       {/* Content Panel */}
       <div className="content-panel">
         {selectedCourse ? (
-          <CourseDetails 
-            selectedCourse={selectedCourse} 
-            setSelectedCourse={setSelectedCourse} 
-            handlePrerequisiteClick={handlePrerequisiteClick} 
+          <CourseDetails
+            selectedCourse={selectedCourse}
+            setSelectedCourse={setSelectedCourse}
+            handlePrerequisiteClick={handlePrerequisiteClick}
           />
         ) : (
           <>
