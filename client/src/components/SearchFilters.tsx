@@ -31,7 +31,7 @@ const SearchFilters: React.FC<Props> = ({
         {/* Search Bar */}
         <input
           type="text"
-          placeholder="Enter course name..."
+          placeholder="Enter course name or professor..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
