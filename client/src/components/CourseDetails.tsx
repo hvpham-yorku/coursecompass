@@ -82,15 +82,20 @@ const CourseDetails: React.FC<Props> = ({ selectedCourse, handlePrerequisiteClic
           <h4>Professors</h4>
           {selectedCourse.professors && Object.keys(selectedCourse.professors).length > 0 ? (
             <ul className="professor-list">
-              {Object.keys(selectedCourse.professors).map((professor, index) => (
-                <li key={index} className="professor-item">
-                  {professor}
-                </li>
-              ))}
+              {Object.entries(selectedCourse.professors)
+                .sort(([, a], [, b]) => (b.quality ?? 0) - (a.quality ?? 0)) 
+                .map(([professor, data], index) => (
+                  <li key={index} className="professor-item">
+                    <strong>{professor}</strong><br />
+                    Student Rating: {data.quality ?? "N/A"} <br /> Course Quality: {data["course quality"] ?? "N/A"}<br />
+                    Difficulty: {data.difficulty ?? "N/A"} <br /> {data["take again"] ?? "N/A"}% would take this professor again.<br />
+                  </li>
+                ))}
             </ul>
           ) : (
             <p>No professors listed for this course.</p>
           )}
+
         </div>
       )}
 
