@@ -2,7 +2,7 @@
 .selected-course {
   margin: auto;
   width: 940px;
-  height: 540px;
+  height: 600px;
   padding: 60px;
   padding-top: 10px;
   background-color: white;
@@ -80,7 +80,7 @@
 }
 
 .close-button:hover {
-  background: #e60000;
+  background:  rgb(121, 28, 28);
 }
 
 .tab-buttons {
@@ -109,8 +109,8 @@
 }
 
 .tab-button.active {
-  background: #007bff;
+  background: #ff4d4d;
   color: white;
-  border-color: #0056b3;
-  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  border-color: #ff4d4d;
+  box-shadow: red;
 }
