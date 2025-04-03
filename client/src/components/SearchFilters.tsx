@@ -12,8 +12,7 @@ interface Props {
   setCredit: (value: string) => void;
   uniqueDepartments: string[];
   uniqueLevels: string[];
-  uniqueCredits: string[]; 
-  handleSearchClick: () => void;
+  uniqueCredits: string[];
 }
 
 const SearchFilters: React.FC<Props> = ({
@@ -21,8 +20,7 @@ const SearchFilters: React.FC<Props> = ({
   department, setDepartment,
   level, setLevel,
   credit, setCredit,
-  uniqueDepartments, uniqueLevels, uniqueCredits,
-  handleSearchClick
+  uniqueDepartments, uniqueLevels, uniqueCredits
 }) => {
   return (
     <div className="search-container">
@@ -31,7 +29,7 @@ const SearchFilters: React.FC<Props> = ({
         {/* Search Bar */}
         <input
           type="text"
-          placeholder="Enter course name or professor..."
+          placeholder="Search course name, code or professor..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
@@ -59,9 +57,6 @@ const SearchFilters: React.FC<Props> = ({
             <option key={creditValue} value={creditValue}>{creditValue}</option>
           ))}
         </select>
-
-        {/* Search Button */}
-        <button onClick={handleSearchClick} className="search-button">Search</button>
       </div>
     </div>
   );
