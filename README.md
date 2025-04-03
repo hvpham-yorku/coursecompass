@@ -22,12 +22,6 @@ It allows them to:
 
 ## Installation
 
-### Prerequisites
-
-Before running the project, ensure you have the following installed:
-
-- **[Node.js](https://nodejs.org/)** – backend
-
 ### Backend Setup
 
 ```bash
