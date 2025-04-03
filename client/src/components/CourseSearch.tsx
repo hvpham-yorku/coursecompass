@@ -24,7 +24,7 @@ const CourseSearch: React.FC = () => {
         if (!response.ok) throw new Error("Failed to fetch courses");
         const data: Course[] = await response.json();
 
-        console.log("Fetched courses:", data); // Debugging log
+        console.log("Fetched courses:", data);
         setCourses(data);
         setFilteredCourses(data);
       } catch (err) {
@@ -36,14 +36,53 @@ const CourseSearch: React.FC = () => {
     fetchCourses();
   }, []);
 
-  // Function to fetch course by code
+  const applyFilters = () => {
+    let results = courses;
+    const search = searchTerm.toLowerCase().trim();
+
+    if (search) {
+      results = results.filter(course => {
+        const nameMatch = course.course_Name?.toLowerCase().includes(search);
+        const codeMatch = course.course_Code.toLowerCase().includes(search);
+        const profMatch = course.professors && Object.keys(course.professors).some(p =>
+          p.toLowerCase().includes(search)
+        );
+        return nameMatch || codeMatch || profMatch;
+      });
+    }
+
+    if (department) {
+      results = results.filter(course => course.course_Code.startsWith(department));
+    }
+
+    if (level) {
+      results = results.filter(course => {
+        const match = course.course_Code.match(/\d{4}/)?.[0];
+        const courseLevel = match ? match[0] + "000" : null;
+        return courseLevel === level;
+      });
+    }
+    
+    if (credit) {
+      results = results.filter(course => Number(course.credits) === Number(credit));
+    }
+
+    setFilteredCourses(results);
+    setSelectedCourse(null);
+  };
+
+  useEffect(() => {
+    applyFilters();
+  }, [searchTerm, department, level, credit, courses]);
+
+  // Get course by code
   const getCourseByCode = (courseCode: string): Course | null => {
     const foundCourse = courses.find(course => course.course_Code === courseCode);
-    console.log("Fetching course:", courseCode, foundCourse); // Debugging log
+    console.log("Fetching course:", courseCode, foundCourse);
     return foundCourse || null;
   };
 
-  // Function to handle clicking prerequisites or postrequisites
+  // Click on prerequisites
   const handlePrerequisiteClick = (courseCode: string) => {
     console.log("Clicked prerequisite:", courseCode);
     const newCourse = getCourseByCode(courseCode);
@@ -52,41 +91,6 @@ const CourseSearch: React.FC = () => {
     } else {
       console.warn("Course not found:", courseCode);
     }
-  };
-
-  const handleSearchClick = () => {
-    console.log("Filters applied:", { searchTerm, department, level, credit });
-
-    let results = courses;
-
-    if (searchTerm.trim()) {
-      const searchNormalized = searchTerm.toLowerCase().trim();
-    
-      results = results.filter(course => {
-        const courseNameMatch = course.course_Name?.toLowerCase().includes(searchNormalized);
-        const courseCodeMatch = course.course_Code.toLowerCase().includes(searchNormalized);
-        const professorMatch = course.professors && Object.keys(course.professors).some(prof =>
-          prof.toLowerCase().includes(searchNormalized)
-        );
-    
-        return courseNameMatch || courseCodeMatch || professorMatch;
-      });
-    }    
-
-    if (department) {
-      results = results.filter(course => course.course_Code.startsWith(department));
-    }
-
-    if (level) {
-      results = results.filter(course => course.course_Code.includes(level));
-    }
-
-    if (credit) {
-      results = results.filter(course => Number(course.credits) === Number(credit));
-    }
-
-    setFilteredCourses(results);
-    setSelectedCourse(null);
   };
 
   return (
@@ -101,7 +105,6 @@ const CourseSearch: React.FC = () => {
           uniqueDepartments={[...new Set(courses.map(course => course.course_Code.split(" ")[0]))]}
           uniqueLevels={[...new Set(courses.map(course => course.course_Code.match(/\d{4}/)?.[0]?.[0] + "000"))]}
           uniqueCredits={[...new Set(courses.map(course => String(course.credits)))]}
-          handleSearchClick={handleSearchClick}
         />
       </div>
 
@@ -115,7 +118,9 @@ const CourseSearch: React.FC = () => {
           />
         ) : (
           <>
-            {loading ? <p>Loading...</p> : error ? <p>{error}</p> : <CourseList filteredCourses={filteredCourses} handleCourseClick={setSelectedCourse} />}
+            {loading ? <p>Loading...</p> : error ? <p>{error}</p> : (
+              <CourseList filteredCourses={filteredCourses} handleCourseClick={setSelectedCourse} />
+            )}
           </>
         )}
       </div>

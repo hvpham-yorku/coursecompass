@@ -22,12 +22,6 @@ It allows them to:
 
 ## Installation
 
-### Prerequisites
-
-Before running the project, ensure you have the following installed:
-
-- **[Node.js](https://nodejs.org/)** – backend
-
 ### Backend Setup
 
 ```bash
@@ -35,7 +29,7 @@ Before running the project, ensure you have the following installed:
 git clone https://github.com/yourusername/coursecompass.git
 
 # Navigate to the backend directory
-cd project-coursecompass-main/backend
+cd coursecompass-main/backend
 
 # Install dependencies
 npm install
@@ -53,7 +47,7 @@ backend app should listen on port 3000
 
 ```bash
 # Navigate to the frontend directory
-cd project-coursecompass-main/client
+cd coursecompass-main/client
 
 # Install dependencies
 npm install
@@ -67,7 +61,7 @@ npm run dev
 1. **Fork this repository** on GitHub.
 2. **Clone your repository**:
    ```bash
-   git clone https://github.com/hvpham-yorku/project-coursecompass
+   git clone https://github.com/hvpham-yorku/coursecompass
    ```
 3. **Create a new branch**:
    ```bash
